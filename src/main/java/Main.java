@@ -15,6 +15,7 @@ public class Main {
         es necesario que sea runnable para que la tarea se ejecute dentro del metodo run
         que es lo que hará el hilo cuando se inicie con start()
          */
+        //TODO Meter hilos en un solo metodo
         Runnable tarea = new Runnable() {
             @Override
             public void run() {
