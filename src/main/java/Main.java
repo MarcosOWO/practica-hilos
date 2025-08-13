@@ -1,6 +1,7 @@
 import javax.sound.midi.SysexMessage;
 import java.util.concurrent.ConcurrentHashMap;
 import java.lang.*;
+import java.util.function.Function;
 
 public class Main {
 
@@ -8,6 +9,10 @@ public class Main {
 
         ConcurrentHashMap<String, Integer> mapaConcurrente = new ConcurrentHashMap<>();
         mapaConcurrente.put("contador",0);
+
+        //Función lambda para comvertir a mayusculas
+        Function<String,String> toMayus = ((x) -> x.toUpperCase());
+        System.out.println("Hola, "+ toMayus.apply("pepe"));
 
 
 
